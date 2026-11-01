@@ -3,53 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light only">
 <title>Silvan Gamit | Operations Executive Portfolio</title>
 <meta name="description" content="Reliable and detail-oriented Operations Executive skilled in loan processing, compliance handling, and data reporting.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
-<style>
-  html,body{background:#f5f8fe!important;color:#0f1b3d}
-  body::before,body::after{display:none!important;background:none!important}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="nav" id="nav">
-  <a href="#home" class="logo"><span>Silvan Gamit</span></a>
+  <a href="#home" class="logo">
+    <span class="logo-mark">SG</span>
+    <div class="logo-text">
+      <strong>Silvan Gamit</strong>
+      <span>Risk & Operations Professional</span>
+    </div>
+  </a>
   <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
   <nav id="menu" class="menu">
-    <a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a>
-    <a href="#projects">Highlights</a><a href="#experience">Experience</a>
-    <a href="#resume">Resume</a><a href="#contact">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#highlights">Highlights</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main>
 <section id="home" class="hero">
-  <svg class="chart" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
-    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563eb" stop-opacity=".28"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></linearGradient></defs>
-    <path class="area" d="M0 470 C120 440 200 480 300 400 S480 360 560 390 S720 250 820 280 S1020 140 1200 90 L1200 600 L0 600Z" fill="url(#g)"/>
-    <path class="line" pathLength="1" d="M0 470 C120 440 200 480 300 400 S480 360 560 390 S720 250 820 280 S1020 140 1200 90"/>
-  </svg>
+  
+  <!-- NEW SUBTLE BACKGROUND ANIMATION -->
+  <div class="hero-bg-anim">
+    <div class="dot-grid"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+  </div>
+
   <div class="wrap hero-grid">
-    <div>
-      <p class="muted">Hello, I'm</p>
-      <h1>Silvan Gamit</h1>
-      <p class="role">Senior Operations Executive & Analyst</p>
-      <p class="lead">Detail-oriented professional specializing in risk operations, compliance handling, and data-driven reporting.</p>
+    <div class="hero-text-content">
+      <p class="greeting">Hello, I'm</p>
+      <h1>Silvan <span>Gamit</span></h1>
+      <p class="role">Risk & Operations | Product Development | Data & MIS</p>
+      <p class="lead">Results-driven professional with 5+ years of experience in KYC, AML, Operations, Product Development and MIS Reporting. I build efficient processes and data-driven solutions that create real impact.</p>
       <div class="btns">
         <a class="btn primary" href="#experience">View experience</a>
-        <a class="btn ghost" href="resume.pdf" download>Download resume</a>
+        <a class="btn outline" href="resume.pdf" download>Download Resume <span>↓</span></a>
       </div>
     </div>
-    <div class="photo">
-      <!-- Change "assets/profile.JPG" to your actual photo file name -->
+   <div class="photo">
+      <div class="blob-bg"></div>
+      <div class="dot-pattern top-left"></div>
+      <div class="dot-pattern bottom-right"></div>
+      <div class="floating-ring ring-1"></div>
+      <div class="floating-ring ring-2"></div>
+      <div class="floating-ring ring-3"></div>
       <img src="assets/profile.JPG" alt="Portrait of Silvan Gamit">
     </div>
-  </div>
 </section>
 
 <section id="about" class="alt">
@@ -57,7 +70,7 @@
     <h2>About me</h2>
     <div class="two">
       <div class="prose">
-        <p>I am a reliable and detail-oriented professional with extensive experience in risk operations, customer service, and administrative support. Throughout my career, I have developed a strong foundation in maintaining regulatory standards in fast-paced work environments.</p>
+        <p>I have experience in KYC, AML, Risk Operations, Product Development and MIS Reporting. I enjoy turning data into insights and improving processes that create real impact.</p>
         <p>My expertise lies in loan processing, compliance handling, and data verification. I am highly proficient in Microsoft Excel and utilize Power BI for data visualization, allowing me to prepare comprehensive MIS reports that track business trends, demographics, and operations.</p>
         <p>Known for my accuracy and strong follow-up skills, I consistently ensure seamless daily operations—whether managing e-commerce platforms, conducting KYC and AML checks, or reconciling complex financial accounts.</p>
       </div>
@@ -73,39 +86,52 @@
 
 <section id="skills">
   <div class="wrap">
-    <h2>Skills</h2>
+    <h2>What I Do</h2>
     <p class="muted intro">Core competencies across operations, compliance, and data reporting.</p>
     <div class="grid cols4">
-      <div class="card"><h3>Analysis & Reporting</h3><ul class="tags"><li>Power BI</li><li>Microsoft Excel</li><li>MIS Reporting</li></ul></div>
-      <div class="card"><h3>Risk & Compliance</h3><ul class="tags"><li>Audit & Compliance</li><li>AML & KYC</li><li>Transaction Monitoring</li></ul></div>
-      <div class="card"><h3>Operations</h3><ul class="tags"><li>Operational Support</li><li>Reconciliation</li><li>Order Fulfillment</li></ul></div>
-      <div class="card"><h3>Customer & Field</h3><ul class="tags"><li>Customer Service</li><li>Loan Processing</li><li>Field Verification</li></ul></div>
+      <div class="card">
+        <div class="icon-box">📊</div>
+        <h3>Analysis & Reporting</h3>
+        <ul class="tags"><li>Power BI</li><li>Microsoft Excel</li><li>MIS Reporting</li></ul>
+      </div>
+      <div class="card">
+        <div class="icon-box purple">🛡️</div>
+        <h3>Risk & Compliance</h3>
+        <ul class="tags"><li>Audit</li><li>AML & KYC</li><li>Transaction Monitoring</li></ul>
+      </div>
+      <div class="card">
+        <div class="icon-box orange">⚙️</div>
+        <h3>Operations</h3>
+        <ul class="tags"><li>Operational Support</li><li>Reconciliation</li><li>Order Fulfillment</li></ul>
+      </div>
+      <div class="card">
+        <div class="icon-box green">📦</div>
+        <h3>Product & Field</h3>
+        <ul class="tags"><li>Customer Service</li><li>Loan Processing</li><li>Product Lifecycle</li></ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="projects" class="alt">
+<section id="highlights" class="alt">
   <div class="wrap">
     <h2>Highlights</h2>
     <p class="muted intro">Key areas of expertise and professional certifications.</p>
     <div class="grid cols3">
       <article class="card project">
-        <div class="thumb">Data & BI</div>
+        <div class="thumb small-thumb blue-light">Data & BI</div>
         <h3>Data Modeling & Visualization</h3>
         <p>Certified in Data Modeling, Analysis & Visualization using Power BI (2025). Skilled in translating raw operational data into clear visualizations to identify business trends and support product development initiatives.</p>
-        <ul class="tags"><li>Power BI</li><li>Data Analysis</li><li>MIS</li></ul>
       </article>
       <article class="card project">
-        <div class="thumb">Operations</div>
+        <div class="thumb small-thumb orange-light">Operations</div>
         <h3>E-Commerce & Loan Operations</h3>
         <p>Managed end-to-end daily operations of the NJ EMI Store. Handled product listings via Shopaccino backend, coordinated vendor dispatches, and resolved post-disbursement customer queries.</p>
-        <ul class="tags"><li>Shopaccino</li><li>Vendor Mgmt</li><li>Inventory</li></ul>
       </article>
       <article class="card project">
-        <div class="thumb">Compliance</div>
+        <div class="thumb small-thumb purple-light">Compliance</div>
         <h3>Audit & Reconciliation</h3>
         <p>Maintained compliance by monitoring FIN LOAN dashboards for PMLA and PEP alerts. Performed monthly reconciliation of pledge and invocation charges using CAMS and KFIN accounting reports.</p>
-        <ul class="tags"><li>AML Compliance</li><li>CAMS</li><li>KFIN</li></ul>
       </article>
     </div>
   </div>
@@ -118,50 +144,121 @@
       <li>
         <h3>Sr. Executive, Product Development</h3>
         <p class="muted"><span>NJ Capital Pvt. Ltd</span> &middot; <span>April 2026 – Present</span> &middot; <span>Surat, India</span></p>
-        <ul class="bullets">
-          <li>Manage day-to-day operations of NJ EMI Store, coordinating customer product queries, Loan KYC, and direct follow-ups.</li>
-          <li>Manage product listings, inventory updates, and accept customer orders through the Shopaccino backend.</li>
-          <li>Prepare and analyze monthly/quarterly MIS reports covering customer segments, demographics, and top brands to identify trends.</li>
+       <ul class="bullets">
+          <li>Manage day-to-day operations of NJ EMI Store, an online consumer-product financing platform.</li>
+          <li>Coordinate with customers regarding product enquiries, Loan Kyc process, and follow-ups received through direct calls.</li>
+          <li>Manage product listings and inventory updates on the NJ EMI Store website through the Shopaccino backend, ensuring accurate product availability and information.</li>
+          <li>Process and accept customer orders through Shopaccino for loan processing and order fulfilment.</li>
+          <li>Coordinate with vendors and internal teams for product availability, order dispatch, shipment tracking, delivery updates, and resolution of post-loan-disbursement customer and order-related queries.</li>
+          <li>Prepare and analyse monthly and quarterly MIS reports covering customer segments, repeat customers, promotional activities, demographics, product categories, and top-performing brands to identify key business trends and support product development initiatives.</li>
         </ul>
       </li>
       <li>
         <h3>Sr. Executive, Operations</h3>
         <p class="muted"><span>NJ Capital Pvt. Ltd</span> &middot; <span>Jan 2024 – March 2026</span> &middot; <span>Surat, India</span></p>
         <ul class="bullets">
-          <li>Conducted Video KYC and transaction monitoring of bank statements to identify suspicious activity per AML guidelines.</li>
-          <li>Analyzed loan/pledge reports and performed monthly reconciliation of pledge and invocation charges using CAMS and KFIN reports.</li>
-          <li>Monitored the FIN LOAN dashboard to resolve flagged issues like mandate discrepancies, PMLA, and PEP alerts.</li>
+          <li>Monitor the FIN LOAN dashboard to identify flagged issues such as bank or mandate discrepancies, PMLA, and PEP alerts, and ensure timely resolution.</li>
+          <li>Conduct Video KYC and manage follow-ups on pending or incomplete sessions to ensure timely loan disbursement.</li>
+          <li>Collaborate with the Customer Care and Support Team to resolve client queries related to loan applications and KYC issues.</li>
+          <li>Analyze loan and pledge reports to identify closed loans with zero outstanding balance and pledged collateral, then generate unpledged request files accordingly.</li>
+          <li>Perform monthly reconciliation of pledge, unpledged, and invocation charges using CAMS and KFIN accounting reports.</li>
+          <li>Conduct transaction monitoring by analyzing customer bank statements to identify suspicious activity and ensure compliance with AML guidelines.</li>
+          <li>Maintain and update MIS reports for records of completed Video KYC.</li>
         </ul>
       </li>
       <li>
         <h3>Computer Operator</h3>
         <p class="muted"><span>Surat Municipal Corporation</span> &middot; <span>Feb 2022 – Jan 2024</span> &middot; <span>Surat, India</span></p>
         <ul class="bullets">
-          <li>Handled daily billing operations at the Property Tax counter, maintained cash records, and ensured accurate daily reconciliation.</li>
-          <li>Oversaw property tax bill distribution, coordinated with field staff, and prepared daily, weekly, and monthly MIS reports.</li>
-          <li>Generated departmental reports for the Street Light Department regarding maintenance activities.</li>
+          <li>Handled day-to-day billing operations at the Property Tax billing counter and Maintained cash records and ensured accurate daily reconciliation.</li>
+          <li>Oversaw the execution of property tax bill distribution. Coordinated with field staff and ensured timely and accurate delivery of bills to citizens.</li>
+          <li>Monitored distribution status and addressed exceptions (e.g., undelivered or returned bills). Prepared daily, weekly, and monthly MIS reports related to bill distribution.</li>
+          <li>Generated departmental reports for the Street Light Department, maintenance activities performed by them.</li>
         </ul>
       </li>
       <li>
         <h3>Business Analyst</h3>
         <p class="muted"><span>Veeraraghavan & Co.</span> &middot; <span>Jan 2021 – Jun 2021</span> &middot; <span>Surat, India</span></p>
-        <ul class="bullets">
-          <li>Conducted in-person visits to customers' premises for document verification and assessed borrower repayment capacity via personal discussions (PD).</li>
-          <li>Prepared verification summaries and red flag reports based on findings from field investigations and document analysis.</li>
+       <ul class="bullets">
+          <li>Conduct in-person visits to customers’ residences or business premises for document verification.</li>
+          <li>Perform personal discussion (PD) with borrowers to assess repayment capacity and intent.</li>
+          <li>Verify business operations, inventory, and premises during field investigation for Loan.</li>
+          <li>Prepare verification summaries and red flag reports based on findings from field visits and document analysis.</li>
         </ul>
       </li>
     </ol>
   </div>
 </section>
 
+<section id="projects" class="alt"> 
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="grid">
+      
+      <article class="card project-row">
+        <div class="thumb">
+          <img src="assets/Bank Churn analysis.png" alt="Bank Churn Analysis">
+        </div>
+        <div class="project-details">
+          <h3>Bank Churn Analysis</h3>
+          <p>This interactive Bank Customer Churn Analysis dashboard evaluates a dataset of 10K customers to uncover key drivers of customer attrition. It highlights an overall churn rate of 20.37% (2K churned customers) and visualizes retention trends across demographics like geography, gender, age, and product usage.</p>
+          <ul class="tags">
+            <li>Retention Analytics</li>
+            <li>Demographic Segmentation</li>
+          </ul>
+          <div class="links">
+            <a href="assets/Bank Churn analysis.pbix" download="Bank Churn analysis.pbix">View Project <span>→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project-row">
+        <div class="thumb">
+          <img src="assets/Shipping analyst.png" alt="Shipping Analyst">
+        </div>
+        <div class="project-details">
+          <h3>Shipping Analyst</h3>
+          <p>This interactive Superstore Dashboard provides a comprehensive overview of retail operations from 2014 to 2017, tracking key financial metrics including ₹22,97,201 in total sales and a 12.5% overall profit margin. It visualizes critical logistics data to uncover supply chain efficiencies, detailing average delivery times and their direct impact on profitability.</p>
+          <ul class="tags">
+            <li>Supply Chain Analysis</li>
+            <li>Financial KPI Tracking</li>
+          </ul>
+          <div class="links">
+            <a href="assets/Shipping analyst.xlsx" download="Shipping analyst.xlsx">View Project <span>→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card project-row">
+        <div class="thumb">
+          <img src="assets/Product_analyst.png" alt="Product Analyst">
+        </div>
+        <div class="project-details">
+          <h3>Product Analyst</h3>
+          <p>This interactive Superstore Product Analysis dashboard evaluates retail performance across 9,994 customers, tracking core financial metrics including ₹22.97L in total sales and a 12.47% profit margin. It offers a comprehensive breakdown of category performance, visualizing revenue, unit sales, and profitability across multiple sectors.</p>
+          <ul class="tags">
+            <li>Performance Analysis</li>
+            <li>Sales Trend Segmentation</li>
+          </ul>
+          <div class="links">
+            <a href="assets/Product_analyst.xlsx" download="Product_analyst.xlsx">View Project <span>→</span></a>
+          </div>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
 <section id="resume" class="alt">
   <div class="wrap">
-    <div class="card resume">
+    <div class="card" style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; justify-content: space-between;">
       <div>
-        <h2>Resume</h2>
-        <p class="muted">A summary of my education, experience, and certifications.</p>
+        <h2 style="margin-bottom: 0.3rem;">Resume</h2>
+        <p class="muted" style="margin: 0;">A summary of my education, experience, and certifications.</p>
       </div>
-      <a class="btn primary" href="resume.pdf" download="resume.pdf"> Download (PDF)</a>
+      <!-- Make sure "resume.pdf" matches your exact file name! -->
+      <a class="btn primary" href="resume.pdf" download>Download (PDF) <span>↓</span></a>
     </div>
   </div>
 </section>
@@ -172,9 +269,10 @@
       <h2>Get in touch</h2>
       <p class="muted">Feel free to reach out for operations, compliance, or analytical roles.</p>
       <ul class="contact-list">
-        <li><a href="mailto:silvang76@gmail.com">silvang76@gmail.com</a></li>
-        <li><a href="tel:+919898437755">+91 98984 37755</a></li>
-        <li><a href="https://www.linkedin.com/in/silvan-gamit-0404891a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn Profile</a></li>
+        <li><span class="icon">✉</span> <a href="mailto:silvang76@gmail.com">silvang76@gmail.com</a></li>
+        <li><span class="icon">📞</span> <a href="tel:+919898437755">+91 98984 37755</a></li>
+        <li><span class="icon">📍</span> Surat, Gujarat, India</li>
+        <li><span class="icon">🔗</span> <a href="https://linkedin.com/in/silvan-gamit-0404891a4" target="_blank" rel="noopener">LinkedIn Profile</a></li>
       </ul>
     </div>
     <form id="contactForm" class="card" data-email="silvang76@gmail.com">
@@ -189,8 +287,10 @@
 </main>
 
 <footer class="footer">
-  <p>&copy; <span id="year"></span> <span>Silvan Gamit</span></p>
-  <a href="#home">Back to top</a>
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Silvan Gamit. All rights reserved.</p>
+    <a href="#home">Back to top</a>
+  </div>
 </footer>
 <script src="script.js"></script>
 </body>
